@@ -171,6 +171,7 @@ header .menu:hover .short-line {
 
 /* ↓↓ Landing ↓↓ */
 .landing {
+    background-color: var(--heading-back);
     height: calc(100vh - 3.998rem);
     display: flex;
     flex-direction: column;
