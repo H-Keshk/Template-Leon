@@ -178,7 +178,7 @@ header .menu:hover .short-line {
     justify-content: center;
     align-items: center;
     text-align: center;
-    background-image: url(https://images.unsplash.com/photo-1555134473-a8e88487e828?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-image: url(imgs/mountain-landing.jpg);
 }
 .landing h1 {
     font-size: 3.5rem;
