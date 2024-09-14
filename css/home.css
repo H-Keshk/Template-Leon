@@ -80,20 +80,88 @@ html {
 /* ↑↑ Main Components ↑↑ */
 
 
-
 /* ↓↓ Header ↓↓ */
 header {
     padding: 1rem 0;
 }
 header .container {
+    position: relative;
     width: 62%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: auto;
 }
+header .icon {
+    transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+}
 header .icon img {
     width: 5rem;
+}
+header .icon .header-main-menu {
+    position: absolute;
+    top: 3rem;
+    left: 0rem;
+    background-color: var(--second-color);
+    text-decoration: none;
+    width: 25rem;
+    height: 90vh;
+    padding: 2rem 3rem;
+    display: none;
+    z-index: 2;
+}
+.header-main-menu .bi {
+    color: white;
+    width: 1rem;
+    font-weight: 300;
+    margin-bottom: 1rem;
+    cursor: pointer;
+}
+.header-main-menu h4 {
+    font-weight: 300;
+    font-size: 1.3rem;
+    color: #85969f;
+    margin-bottom: 1rem;
+}
+.header-main-menu ul {
+    padding: 0;
+    list-style: none;
+    margin-bottom: 3rem;
+}
+.header-main-menu li {
+    font-size: 1.3rem;
+}
+.header-main-menu a {
+    color: white;
+    transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+}
+.copyright {
+    color: #85969f;
+    margin-top: 20rem;
+}
+.header-main-menu ul a:hover {
+    color: #4dd6c8;
+}
+header .icon .header-main-menu::before {
+    position: absolute;
+    content: "";
+    width: 0rem;
+    height: 1rem;
+    top: -1.5rem;
+    left: 4rem;
+    border: 12px solid;
+    border-color: transparent transparent var(--second-color) transparent;
+}
+header .icon:hover .header-main-menu {
+    display: block;
 }
 header .menu {
     position: relative;
@@ -126,7 +194,7 @@ header .menu:hover .short-line {
 }
 .linx {
     position: absolute;
-    top: 2.7rem;
+    top: 2rem;
     right: -0.5rem;
 }
 .menu ul {
@@ -147,7 +215,7 @@ header .menu:hover .short-line {
     top: -1.5rem;
     right: 0.8rem;
     border: 12px solid;
-    border-color: White White var(--light-gray) White;
+    border-color: transparent transparent var(--light-gray) transparent;
 }
 .menu ul li {
     width: 100%;
@@ -159,7 +227,6 @@ header .menu:hover .short-line {
     -o-transition: all 0.3s ease;
 }
 .menu ul li a {
-    text-decoration: none;
     color: var(--type);
 }
 .menu ul li:hover {
