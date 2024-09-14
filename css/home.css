@@ -23,6 +23,9 @@ overflow-wrap: break-word;
 #root, #__next {
 isolation: isolate;
 }
+a {
+    text-decoration: none;
+}
 html {
     scroll-behavior: smooth;
 }
